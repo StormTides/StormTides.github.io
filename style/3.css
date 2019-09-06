@@ -1,0 +1,239 @@
+body{
+    background:  #e4e9ec top;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px auto auto auto;
+    color: #000;
+}
+p{
+    padding: 2px;
+    margin: 0px;
+}
+#main_container{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: 0px;
+    background-color: #fff; 
+}
+#header{
+    width: 1000px;
+    height: 136px;
+    background: url()no-repeat center;
+    background-position: 0px 0px;
+    margin: auto;
+}
+#top_right{
+    width:728px;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
+#top_right span{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#big_banner{
+    padding-top: 15px;
+}
+#logo{
+    float: left;
+    padding: 30px 0 0 30px;
+}
+#main_content{
+    clear: both;
+}
+#menu_tab{
+    width: 1000px;
+    height: 36px;
+    background-color: #a1bbda;
+}
+ul.menu{
+    list-style-type: none;
+    float: left;
+    display: block;
+    width: 982px;
+    margin: 0px;
+    padding: 0px;
+}
+ul.menu li{
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 36px;
+}
+a.nav:link,a.nav:visited{
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 8px;
+    margin: 0 14px 0 14px;
+    height: 36px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+a.nav:hover{
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 8px;
+    margin: 0 14px 0 14px;
+    height: 36px;
+    text-decoration: none;
+    text-align: center;
+    color: #199ecd;
+}
+ul.menu li.divider{
+    display: inline;
+    width: 4px;
+    height: 36px;
+    float: left;
+    background: url()no-repeat center;
+}
+#crumb_navigation{
+    width: 980px;
+    height: 15px;
+    padding: 5px 10px 0 20px;
+    color: #333;
+    background: url() no-repeat left;
+    background-position: 5px 8px;
+}
+#crumb_navigation span{
+    color: #0fa0dd;
+}
+
+#content{
+    overflow: auto;
+    margin: 15px;
+    padding: 0;
+}
+#content_left{
+    float: left;
+    width: 580px;
+    padding:10px;
+}
+.post{
+    padding: 5px;
+}
+.post h1{
+    font-family: Tahoma;
+    font-size: 18px;
+    color: #588970;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+.post p{
+    font-family: Arial;
+    font-size: 12px;
+    color:#46574d;
+    text-align: justify;
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+.post img{
+    margin: 0 0 0 25px;
+    padding: 0;
+    border: 1px solid #333;
+}
+#content_right{
+    float: left;
+    width: 250px;
+    margin: 0 0 0 10px;
+    padding: 0;
+}
+#setion{
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+#section_1_top{
+    width: 176px;
+    height: 36px;
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 14px;
+    color: #276b45;
+    background: url()no-repeat;
+    margin: 0px;
+    padding: 15px 0 0 70px;
+}
+#section_1_mid{
+    width: 217px;
+    background: url()repeat-y;
+    margin: 0;
+    padding: 5px 15px;
+}
+#section_1_mid.myform{
+    margin: 0;
+    padding: 0;
+}
+.myform .frm_cont{
+    margin-bottom: 8px;
+}
+.myform .username input,.myform .password input{
+    width: 120px;
+    height: 18px;
+    padding: 2px 0px 2px 15px;
+    border: solid 1px #aacfe4;
+}
+.myform .btns{
+    text-align: center;
+}
+#section_1_bottom{
+    width:246px;
+    height: 17px;
+    background: url()no-repeat;
+}
+#section2{
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+#section_2_top{
+    width: 176px;
+    height: 42px;
+    font-family: "黑体";
+    font-weight: bold;
+    font-size: 14px;
+    color: #276b45;
+    background: url()no-repeat;
+    margin: 0;
+    padding: 15px 0 0 70px;
+}
+#section_2_mid{
+    width: 246px;
+    background: url()repeat-y;
+    margin: 0;
+    padding: 5px 0;
+}
+#section_2_mid ul{
+    list-style: none;
+    margin: 0 20px;
+    padding: 0;
+}
+#section_2_mid li{
+    border-bottom: 1px dotted #fff;
+    margin: 0;
+    padding: 5px;
+}
+#section_2_mid li a{
+    color: rgb(159, 155, 170);
+    text-decoration: none;
+}
+#section_2_mid li a:hover{
+    color: #363;
+    text-decoration: none;
+}
+#section_2_bottom{
+    width: 246px;
+    height: 18px;
+    background: url()no-repeat;
+}
+
+
+#footer{
+    width: 980px;
+    clear: both;
+    height: 45px;
+    background: #a1bbda;
+    text-align: center;
+    padding: 10px;
+}

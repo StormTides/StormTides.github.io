@@ -1,0 +1,142 @@
+body{
+    background:  #e4e9ec top;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px auto auto auto;
+    color: #000;
+}
+#main_container{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: 0px;
+    background-color: #fff; 
+}
+#header{
+    width: 1000px;
+    height: 136px;
+    background: url()no-repeat center;
+    background-position: 0px 0px;
+    margin: auto;
+}
+#top_right{
+    width:728px;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
+#top_right span{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#big_banner{
+    padding-top: 15px;
+}
+#logo{
+    float: left;
+    padding: 30px 0 0 30px;
+}
+#main_content{
+    clear: both;
+}
+#menu_tab{
+    width: 1000px;
+    height: 36px;
+    background-color: #a1bbda;
+}
+ul.menu{
+    list-style-type: none;
+    float: left;
+    display: block;
+    width: 982px;
+    margin: 0px;
+    padding: 0px;
+}
+ul.menu li{
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 36px;
+}
+a.nav:link,a.nav:visited{
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 8px;
+    margin: 0 14px 0 14px;
+    height: 36px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+a.nav:hover{
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 8px;
+    margin: 0 14px 0 14px;
+    height: 36px;
+    text-decoration: none;
+    text-align: center;
+    color: #199ecd;
+}
+ul.menu li.divider{
+    display: inline;
+    width: 4px;
+    height: 36px;
+    float: left;
+    background: url()no-repeat center;
+}
+#crumb_navigation{
+    width: 980px;
+    height: 15px;
+    padding: 5px 10px 0 20px;
+    color: #333;
+    background: url() no-repeat left;
+    background-position: 5px 8px;
+}
+#crumb_navigation span{
+    color: #0fa0dd;
+}
+#left{
+    float: left;
+    width: 200px;
+    height: 360px;
+    background-color: #3565a3;
+    padding: 8px;
+    margin: 10px;
+    border: 1px #010f20 solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px gray;
+}
+#left ul{
+    padding: 0px;
+}
+#left li{
+    list-style-type: none;
+    border-bottom: 1px #e6e0c8 solid;
+    padding: 10px;
+}
+#left li:hover{
+    background-color: #07336b;
+}
+#left a{
+    text-decoration: none;
+    color: #fff;
+}
+#right{
+    float: right;
+    width: 700px;
+    height: 520px;
+    padding: 8px;
+    text-align: left;
+    line-height: 22px;
+    text-indent: 2em;
+}
+#footer{
+    width: 980px;
+    clear: both;
+    height: 45px;
+    background: #a1bbda;
+    text-align: center;
+    padding: 10px;
+}

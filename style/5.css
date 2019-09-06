@@ -1,0 +1,255 @@
+body{
+    background:  #e4e9ec top;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px auto auto auto;
+    color: #000;
+}
+p{
+    padding: 2px;
+    margin: 0px;
+}
+#main_container{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    padding: 0px;
+    background-color: #fff; 
+}
+#header{
+    width: 1000px;
+    height: 136px;
+    background: url()no-repeat center;
+    background-position: 0px 0px;
+    margin: auto;
+}
+#top_right{
+    width:728px;
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
+#top_right span{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#big_banner{
+    padding-top: 15px;
+}
+#logo{
+    float: left;
+    padding: 30px 0 0 30px;
+}
+#main_content{
+    clear: both;
+}
+#menu_tab{
+    width: 1000px;
+    height: 36px;
+    background-color: #a1bbda;
+}
+ul.menu{
+    list-style-type: none;
+    float: left;
+    display: block;
+    width: 982px;
+    margin: 0px;
+    padding: 0px;
+}
+ul.menu li{
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 36px;
+}
+a.nav:link,a.nav:visited{
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 8px;
+    margin: 0 14px 0 14px;
+    height: 36px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+a.nav:hover{
+    display: block;
+    float: left;
+    padding: 0px 8px 0px 8px;
+    margin: 0 14px 0 14px;
+    height: 36px;
+    text-decoration: none;
+    text-align: center;
+    color: #199ecd;
+}
+ul.menu li.divider{
+    display: inline;
+    width: 4px;
+    height: 36px;
+    float: left;
+    background: url()no-repeat center;
+}
+#crumb_navigation{
+    width: 980px;
+    height: 15px;
+    padding: 5px 10px 0 20px;
+    color: #333;
+    background: url() no-repeat left;
+    background-position: 5px 8px;
+}
+#crumb_navigation span{
+    color: #0fa0dd;
+}
+#container{
+    border-radius: 100px;
+    margin: 50px auto 0 auto;
+    width: 960px;
+    height: 1160px;
+    background-color: rgba(59, 106, 168, 0.8);
+    text-align: center;
+}
+#top{
+    height: 100px;
+    padding-top: 80px;
+}
+#top section{
+    float: left;
+    height: 100px;
+    width: 560px;
+    font-family: chiller;
+    font-size: 90px;
+    line-height: 90px;
+    color: green;
+}
+#top form{
+    float: right;
+    height: 40px;
+    width: 300px;
+    padding-top: 60px;
+}
+#focus{
+    height: 200px;
+    background: url(../jpg/323500.jpg) center;
+    opacity: 0.6;
+    margin: 20px;
+    border-radius: 20px;
+}
+#focus:hover{
+    opacity: 1;
+}
+#navi{
+    height: 50px;
+    margin: 0 30px;
+    font-family: 微软黑体,黑体;
+}
+#navi ul{
+    height: 30px;
+    list-style-type: none;
+    padding: 0px;
+    float: right;
+}
+#navi li{
+    float: left;
+    width: 160px;
+    padding: 5px 5px 5px 0.5em;
+}
+#navi li:hover{
+    background-color: #0044BB;
+}
+#navi li a{
+    text-decoration: none;
+    color: green;
+}
+#main{
+    margin: 30px 0;
+    height: 540px;
+    border-radius: 10px;
+}
+#left,#center,#right{
+    float: left;
+    width: 290px;
+    height: 500px;
+    background-color: #FFEE99;
+    padding-top: 10px;
+    border-radius: 15px;
+    margin: 15px;
+}
+.list{
+    float: left;
+    font-size: 20px;
+    margin: 5px;
+}
+.more{
+    float: right;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.row{
+    float: left;
+    width: 280px;
+    height: 30px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+.row:hover{
+    background: #F66;
+}
+.number1{
+    background-color: orange;
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+}
+.number2{
+    background-color: #AAAAAA;
+    width: 30px;
+    height: 30px;
+    color: white;
+    text-align: center;
+}
+.song{
+    float: left;
+    width: 120px;
+    height: 30px;
+    color: #0066FF;
+    font-size: 15px;
+    margin: -25px 0 0 25px;
+}
+.singer{
+    float: right;
+    width: 80px;
+    height: 20px;
+    font-size: 15px;
+    margin: -30px 20px 0 30px;
+}
+#foot{
+    height: 150px;
+    border-radius: 50px;
+}
+.navi2{
+    margin: 10px;
+    background-color: #FFF;
+    padding: 7px;
+    border-radius: 20px;
+}
+.navi2 a:link{
+    color: black;
+    text-decoration: none;
+}
+.navi2 span{
+    padding: 0 28px;
+    margin-left: 30px;
+    font-size: 15px;
+}
+#footer{
+    width: 980px;
+    clear: both;
+    height: 45px;
+    background: #a1bbda;
+    text-align: center;
+    padding: 10px;
+}

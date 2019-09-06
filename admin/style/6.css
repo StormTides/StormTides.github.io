@@ -1,0 +1,108 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.left {
+	background: #313541;
+	width: 20%;
+	float: left;
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+}
+.bigTitle {
+	background: #3d598a;
+	color: #fff;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 24px;
+	font-family: -webkit-body;
+}
+.lines .active {
+	background: #272a34;
+	color: #fff;
+}
+.lines img{
+    width: 23px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+    margin-right: 9px;
+}
+.lines div {
+	height: 70px;
+	line-height: 70px;
+	padding-left: 50px;
+	color: #707783;
+}
+
+.lines div:hover {
+	cursor: pointer;
+	color: #FFFFFF;
+}
+.top {
+	width: 80%;
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	border-bottom: 1px solid #b0cdff;
+}
+.leftTiyle {
+	font-size: 25px;
+	padding-left: 30px;
+	font-weight: 600;
+	color: #545454;
+	float: left;
+}
+.thisUser {
+	float: right;
+	margin-right: 30px;
+}
+.content {
+	float: right;
+	width: 80%;/**/
+	text-align: center;
+	font-size: 16px;
+}
+table.table_search{
+    border: 1px solid #ccc;
+    border-right: none;
+    border-left: none;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+}
+table.table_search tr{
+    height: 31px;
+}
+table.table_search tr td{
+    text-indent: 5px;
+    border-right: 1px solid #ccc;
+    padding-right: 1px;
+}
+table.table_search tr.trback td{
+    border-right: none;
+}
+tr.trback{
+    background: url() repeat-x left top;
+}
+table.table_result{
+    width: 750px;
+}
+table.table_result tr{
+    height: 34px;
+}
+table.table_result tr.tabletop{
+    background: url() repeat-x left top;
+    height: 34px;
+}
+table.table_result tr td{
+    border-right: 1px solid #ebebeb;
+    padding-left: 5px;  
+}
+
+
+
+
+
+
