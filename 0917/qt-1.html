@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>StormTides</title>
+    <link href="style/1.css" rel="stylesheet"type="text/css">
+</head>
+<body>
+    <div id="main_container">
+        <div id="header">
+            <div id="top_right">
+                <a href="#">登录</a><span>|</span><a href="#">免费注册</a><span>|</span><a href="#">我的账务</a><span>|</span><a href="#">帮助中心</a><span>|</span>订购热线：400-686-8888
+                <div id="big_banner"><img src="jpg/4-q15.png"width="728"height="90"border="0"/></div>
+            </div>
+            <div id="logo"><img src="jpg/4-q14.png" width="182"height="85"/></div>
+        </div>
+        <div id="main_content">
+            <div id="menu_tab">
+                <ul class="menu">
+                    <li><a href="#"class="nav">首页</a></li>
+                        <li class="divider"></li>
+                    <li><a href="#"class="nav">关于我</a></li>
+                        <li class="divider"></li>
+                    <li><a href="#"class="nav">闲言碎语</a></li>
+                        <li class="divider"></li>
+                    <li><a href="#"class="nav">学无止境</a></li>
+                        <li class="divider"></li>
+                    <li><a href="#"class="nav">留言板</a></li>
+                        <li class="divider"></li>
+                    <li><a href="#"class="nav">关于我们</a></li>
+                        <li class="divider"></li>
+                    <li><a href="#"class="nav">登录</a></li>
+                </ul>
+            </div>
+            <div id="crumb_navigation">当前位置：<span>首页</span></div>
+            <div id="left">
+                <img src="jpg/323318.jpg" width="192px" height="120px" />
+                <ul>
+                    <li><a href="#">数据挖掘概述</a></li>
+                    <li><a href="#">分类</a></li>
+                    <li><a href="#">聚类</a></li>
+                    <li><a href="#">关联规则</a></li>
+                </ul>
+            </div>
+            <div id="right">
+                <h1>频繁项集的产生及经典算法</h1>
+                <h5>前言：</h5>
+                <p>关联规则是数据挖掘中最活跃的研究方法之一，
+                	是指搜索业务系统中的所有细节或事务，找出所有能把一
+                	组事件或数据项与另一组事件或数据项联系起来的规则，以获
+                	得存在于数据库中的不为人知的或不能确定的信息，它侧重于确
+                	定数据中不同领域之间的联系，也是在无指导学习系统中挖掘本地模式的最普通形式。
+				</p>
+				<p>一般来说，关联规则挖掘是指从一个大型的数据集（Dataset）发现有趣的关
+					联（Association）或相关关系（Correlation），即从数据集中识别出频繁
+					出现的属性值集（Sets of Attribute Values），也称为频繁项集
+					（Frequent Itemsets，频繁集），然后利用这些频繁项集创建描述关联关系的规则的过程。
+				</p>
+				<h5>关联规则挖掘问题:</h5>
+				<p>发现频繁项集:现所有的频繁项集是形成关联规则的基础。通过用户给定的最
+					小支持度，寻找所有支持度大于或等于Minsupport的频繁项集。
+				</p>
+				<p>
+					生成关联规则:通过用户给定的最小可信度，在每个最大频繁项集中，寻找可信度不小于Minconfidence的关联规则.
+				</p>
+				<p>
+					如何迅速高效地发现所有频繁项集，是关联规则挖掘的核心问题，也是衡量关联规则挖掘算法效率的重要标准。
+				</p>
+				<p>
+					经典的挖掘完全频繁项集方法是查找频繁项集集合的全集。其中包括基于广度优先算法搜索的
+					关联规则算法--Apriori算法(通过多次迭代找出所有的频繁项集)及DHP(Direct Hashing Pruning)
+					算法等改进算法；基于深度优先搜索策略的FP-Growth算法，ECLAT算法，COFI算法等，
+					我将介绍两种经典算法--Apriori算法和FP-Growth算法。
+				</p>
+				<h4>1.Apriori算法</h4>
+				<p>
+					Apriori算法基于频繁项集性质的先验知识，使用由下至上逐层搜索的迭代方法，
+					即从频繁1项集开始，采用频繁k项集搜索频繁k+1项集，直到不能找到包含更多项的频繁项集为止。
+				</p>
+				<p>
+					Apriori算法由以下步骤组成，其中的核心步骤是连接步和剪枝步：
+				</p>
+                <p>
+                	<img src="./jpg/4-q19.png"width="450px"height="150px"/>
+                </p>
+                <h5>
+                	Apriori算法由以下步骤组成，其中的核心步骤是连接步和剪枝步：
+                </h5>
+                <p>（1）生成频繁1项集L1。</p>
+                <p>（2）连接步：为了寻找频繁k项集 ，首先生成一个潜在频繁k项集构成的候选项集 ， 中的每一个项集是由两个只有一项不同的属于 的频繁项集做k-2连接运算得到的。连接方法为：设l1和l2是 中的项集，即 ，如果l1和l2中的前k-2个元素相同，则称l1和l2是可连接的，用 表示。假定事务数据库中的项均按照字典顺序排列，li[j]表示li中的第j项，则连接l1和l2的结果项集是 。</p>
+                <p>（3）剪枝步：连接步生成的Ck是Lk的超集，包含所有的频繁项集Lk，同时也可能包含一些非频繁项集。可以利用前述先验知识（定理3.2），进行剪枝以压缩数据规模。比如，如果候选k项集Ck的k-1项子集不在Lk-1中，那么该子集不可能是频繁项集，可以直接删除。</p>
+                <p>（4）生成频繁k项集Lk：扫描事务数据库D，计算Ck中每个项集的支持度，去除不满足最小支持度的项集，得到频繁k项集Lk。</p>
+                <p>（5）重复步骤（2）～（4），直到不能产生新的频繁项集的集合为止，算法中止。</p>
+                <hr/>
+                <h5>
+                	Apriori算法是一种基于水平数据分布的、宽度优先的算法，由于
+                	使用了层次搜索策略和剪枝技术，使得Apriori算法在挖掘频繁模式时具
+                	有较高的效率。但是，Apriori算法也有两个致命的性能瓶颈：
+                </h5>
+                <p>（1）Apriori算法是一个多趟搜索算法，每次搜索都要扫描事务数据库，I/O开销巨大。对于候选k项集Ck来说，必须扫描其中的每个元素以确认是否加入频繁k项集Lk，若候选k项集Ck中包含n项，则至少需要扫描事务数据库n次。
+				</p>
+                <p>
+                	（2）可能产生庞大的候选项集。由于针对频繁项集Lk-1的k-2连接运算，由Lk-1
+                	产生的候选k项集Ck是呈指数增长的，如此海量的候选集对于计算机的运算时间和
+                	存储空间都是巨大的挑战。
+				</p>
+				<hr/>
+				
+				<h5>Apriori算法步骤：</h5>
+				<p>(1）扫描数据库，产生1-项集候选项集合C1；</p>
+      			<p>(2)从2项集开始，利用上次产生的大项集构造新的候选集，计算每个候选集的支持度，得到下一阶大项集；</p>
+      			<p>（3）重复执行步骤2，直至某阶大项集为空。</p>
+      			<hr/>
+      			
+      			<h5>Apriori算法步骤：</h5>
+      			<p>
+      				设最小支持度为2，即in_sup=2利用Apriori算法产生候选项集及频繁项集的过程。
+      			</p>
+      			<p>
+      				<table width="500" height="200" border="3">
+      					<tr>
+      						<th>交易</th>
+      						<th>商品代码</th>
+      					</tr>
+      					<tr>
+      						<th>T100</th>
+      						<th>L1,L2,L3</th>
+      					</tr>
+      					<tr>
+      						<th>T200</th>
+      						<th>L2,L4</th>
+      					</tr>
+      					<tr>
+      						<th>T300</th>
+      						<th>L2,L3</th>
+      					</tr>
+      					<tr>
+      						<th>T400</th>
+      						<th>L1,L2,L4</th>
+      					</tr>
+      					<tr>
+      						<th>T500</th>
+      						<th>L1,L3</th>
+      					</tr>
+      					<tr>
+      						<th>T600</th>
+      						<th>L2,L3</th>
+      					</tr>
+      					<tr>
+      						<th>T700</th>
+      						<th>L1,L3</th>
+      					</tr>
+      					<tr>
+      						<th>T800</th>
+      						<th>L1,L2,L3,L5</th>
+      					</tr>
+      					<tr>
+      						<th>T900</th>
+      						<th>L1,L2,L3</th>
+      					</tr>
+      				</table>
+      			</p>
+      			<hr />
+      			<h5>K=1,min_sup=1</h5>
+      			<p>
+      				<table width="500" height="200" border="3">
+      					<tr>
+      						<th align="left"colspan="2">C1</th>
+      					</tr>
+      					<tr>
+      						<th>项集</th>
+      						<th>支持度计数</th>
+      					</tr>
+      					<tr>
+      						<th>{L1}</th>
+      						<th>6</th>
+      					</tr>
+      					<tr>
+      						<th>{L2}</th>
+      						<th>7</th>
+      					</tr>
+      					<tr>
+      						<th>{L3}</th>
+      						<th>6</th>
+      					</tr>
+      					<tr>
+      						<th>{L4}</th>
+      						<th>2</th>
+      					</tr>
+      					<tr>
+      						<th>{L5}</th>
+      						<th>2</th>
+      					</tr>
+      				</table>
+      			</p>
+      			<p>
+      				<table width="500" height="200" border="3">
+      					<tr>
+      						<th align="left"colspan="2">L1</th>
+      					</tr>
+      					<tr>
+      						<th>项集</th>
+      						<th>支持度计数</th>
+      					</tr>
+      					<tr>
+      						<th>{L1}</th>
+      						<th>6</th>
+      					</tr>
+      					<tr>
+      						<th>{L2}</th>
+      						<th>7</th>
+      					</tr>
+      					<tr>
+      						<th>{L3}</th>
+      						<th>6</th>
+      					</tr>
+      					<tr>
+      						<th>{L4}</th>
+      						<th>2</th>
+      					</tr>
+      					<tr>
+      						<th>{L5}</th>
+      						<th>2</th>
+      					</tr>
+      				</table>
+      			</p>
+      			<hr />
+      			
+      			<p>
+      				<table width="500" height="200" border="3">
+      					<tr>
+      						<th align="left"colspan="2">C2</th>
+      					</tr>
+      					<tr>
+      						<th>项集</th>
+      						<th>支持度计数</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2}</th>
+      						<th>4</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L3}</th>
+      						<th>4</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L4}</th>
+      						<th>1</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L5}</th>
+      						<th>2</th>
+      					</tr>
+      					<tr>
+      						<th>{L2,L3}</th>
+      						<th>4</th>
+      					</tr>
+      					<tr>
+      						<th>{L2,L4}</th>
+      						<th>2</th>
+      					</tr>
+      					<tr>
+      						<th>{L2,L5}</th>
+      						<th>2</th>
+      					</tr>
+      					<tr>
+      						<th>{L3,L4}</th>
+      						<th>0</th>
+      					</tr>
+      					<tr>
+      						<th>{L3,L5}</th>
+      						<th>1</th>
+      					</tr>
+      					<tr>
+      						<th>{L4,L5}</th>
+      						<th>0</th>
+      					</tr>
+      				</table>
+      			</p>
+      			<p>
+      				<table width="500" height="200" border="3">
+      					<tr>
+      						<th align="left"colspan="2">L2</th>
+      					</tr>
+      					<tr>
+      						<th>项集</th>
+      						<th>支持度计数</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2}</th>
+      						<th>4</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L3}</th>
+      						<th>4</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L5}</th>
+      						<th>2</th>
+      					</tr>
+      					<tr>
+      						<th>{L2,L3}</th>
+      						<th>4</th>
+      					</tr>
+      					<tr>
+      						<th>{L2,L4}</th>
+      						<th>2</th>
+      					</tr>
+      					<tr>
+      						<th>{L2,L5}</th>
+      						<th>2</th>
+      					</tr>
+      				</table>
+      			</p>
+      			<hr />
+      			
+      			<p>
+      				<table width="500" height="200" border="3">
+      					<tr>
+      						<th align="left"colspan="2">C3：由L2计算3项集</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2}+{L1,L3}</th>
+      						<th><mark>{L1,L2,L3}</mark></th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2}+{L1,L5}</th>
+      						<th><mark>{L1,L2,L5}</mark></th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2}+{L2,L3}</th>
+      						<th><mark>{L1,L2,L3}</mark></th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2}+{L2,L4}</th>
+      						<th>{L1,L2,L4}</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L3}+{L1,L5}</th>
+      						<th>{L1,L3,L5}</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L3}+{L2,L3}</th>
+      						<th><mark>{L1,L2,L3}</mark></th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L3}+{L2,L4}</th>
+      						<th>{超过三项}</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L3}+{L2,L5}</th>
+      						<th>{超过三项}</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L5}+{L2,L3}</th>
+      						<th>{超过三项}</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L5}+{L2,L4}</th>
+      						<th>{超过三项}</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L5}+{L2,L5}</th>
+      						<th><mark>{L1,L2,L5}</mark></th>
+      					</tr>
+      					<tr>
+      						<th>{L2,L3}+{L2,L4}</th>
+      						<th>{L2,L3,L4}</th>
+      					</tr>
+      					<tr>
+      						<th>{L2,L3}+{L2,L5}</th>
+      						<th>{L2,L3,L5}</th>
+      					</tr>
+      					
+      					<tr>
+      						<th>{L2,L4}+{L2,L5}</th>
+      						<th>{L2,L4,L5}</th>
+      					</tr>
+      				</table>
+      			</p>
+      			<p>
+      				<table width="500" height="200" border="3">
+      					<tr>
+      						<th align="left"colspan="2">L3</th>
+      					</tr>
+      					<tr>
+      						<th>项集</th>
+      						<th>支持度计数</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2,l3}</th>
+      						<th>3</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2,l5}</th>
+      						<th>2</th>
+      					</tr>
+      				</table>
+      			</p>
+      			<hr />
+      			
+      			<p>
+      				<table width="500" height="200" border="3">
+      					<tr>
+      						<th align="left"colspan="2">C3：由L3计算4项集</th>
+      					</tr>
+      					<tr>
+      						<th>{L1,L2,l3}+{L1,L2,l5}</th>
+      						<th><mark>{L1,L2,L3,l5}</mark></th>
+      					</tr>
+      				</table>
+      			</p>
+      			<p><mark>因为它的子集{I2， I3，I5}不是频繁的，此项集删除，C4=∅</mark></p>
+      			<hr />
+      			
+      			<h5>Apriori算法优缺点：</h5>
+      			<p>优点:思路简单；递归计算；实现方便</p>
+      			<p>缺点:频繁遍历数据库；生成候选集-----连接较多；占用空间大；运算量大。</p>
+      			
+				<h4>2.FP-Growth算法</h4>
+				<p>
+					频繁模式树增长算法（Frequent Pattern Tree Growth）采用分而治之的
+					基本思想，将数据库中的频繁项集压缩到一棵频繁模式树中，同时保持项集
+					之间的关联关系。然后将这棵压缩后的频繁模式树分成一些条件子树，每个
+					条件子树对应一个频繁项，从而获得频繁项集，最后进行关联规则挖掘。
+				</p>
+				<p>
+					<img src="jpg/4-q23.PNG"width="650"height="300"/>
+				</p>
+				
+				<h5>FP-Growth算法演示-------构造FP树</h5>
+				<p>事务数据库的建立</p>
+				<table width="500"height="200"border="3">
+					<tr>
+						<th>Tid</th>
+						<th>Items</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th>L1,L2,L5</th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th>L2,L4</th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th>L2,L3</th>
+					</tr>
+					<tr>
+						<th>4</th>
+						<th>L1,L2,L4</th>
+					</tr>
+					<tr>
+						<th>5</th>
+						<th>L1,L3</th>
+					</tr>
+					<tr>
+						<th>6</th>
+						<th>L2,L3</th>
+					</tr>
+					<tr>
+						<th>7</th>
+						<th>L1,L3</th>
+					</tr>
+					<tr>
+						<th>8</th>
+						<th>L1,L2,L3,L5</th>
+					</tr>
+					<tr>
+						<th>9</th>
+						<th>L1,L2,L3</th>
+					</tr>
+				</table>
+				<hr />
+				
+				<p>扫描事务数据库得到频繁项目集F</p>
+				<table width="500"height="200"border="3">
+					<tr>
+						<th>11</th>
+						<th>6</th>
+					</tr>
+					<tr>
+						<th>12</th>
+						<th>7</th>
+					</tr>
+					<tr>
+						<th>13</th>
+						<th>6</th>
+					</tr>
+					<tr>
+						<th>14</th>
+						<th>2</th>
+					</tr>
+					<tr>
+						<th>15</th>
+						<th>2</th>
+					</tr>
+				</table>
+				
+				<p>定义minsup=20%,即最小支持度为2,重新排列F</p>
+				<table width="500"height="200"border="3">
+					<tr>
+						<th>12</th>
+						<th>7</th>
+					</tr>
+					<tr>
+						<th>11</th>
+						<th>6</th>
+					</tr>
+					
+					<tr>
+						<th>13</th>
+						<th>6</th>
+					</tr>
+					<tr>
+						<th>14</th>
+						<th>2</th>
+					</tr>
+					<tr>
+						<th>15</th>
+						<th>2</th>
+					</tr>
+				</table>
+				
+				<p>重新调整事务数据库</p>
+				<table width="500"height="200"border="3">
+					<tr>
+						<th>Tid</th>
+						<th>Items</th>
+					</tr>
+					<tr>
+						<th>1</th>
+						<th>L2,L1,L5</th>
+					</tr>
+					<tr>
+						<th>2</th>
+						<th>L2,L4</th>
+					</tr>
+					<tr>
+						<th>3</th>
+						<th>L2,L3</th>
+					</tr>
+					<tr>
+						<th>4</th>
+						<th>L2,L1,L4</th>
+					</tr>
+					<tr>
+						<th>5</th>
+						<th>L1,L3</th>
+					</tr>
+					<tr>
+						<th>6</th>
+						<th>L2,L3</th>
+					</tr>
+					<tr>
+						<th>7</th>
+						<th>L1,L3</th>
+					</tr>
+					<tr>
+						<th>8</th>
+						<th>L2,L1,L3,L5</th>
+					</tr>
+					<tr>
+						<th>9</th>
+						<th>L2,L1,L3</th>
+					</tr>
+				</table>
+				<hr />
+				<img src="jpg/4-q24.PNG" width="650"height="300"/>
+				<p>在FP树中可以看到，从根节点到i5:1的路径有两条：</p>
+				<p>i2:7-->i1:4-->i5:1</p>
+				<p>i2:7-->i14-->i3:2-->i5:1</p>
+				<p>i2:7-->i1:4和i2:7-->i14-->i3:2因为最终到达的节点肯定是i5，所以将i5省略就是i5的条件模式基，记为{i2,i1:1}{i2,i1,i3:1}</p>
+				<p>条件模式基：{i2,i1:1}{i2,i1,i3:1}</p>
+				<p>因为i3:1x小于最小支持度2,所以讲i3:1省略不计,i5的条件FP树记为{i2:2,I1:2}</p>
+				<hr />
+				
+				<p>根据条件FP树，我们可以进行全排列组合，得到挖掘出来的频繁模式（这里要将商品本
+					身，如i5也算进去，每个商品挖掘出来的频繁模式必然包括这商品本身）</p>
+				<table width="500"height="200"border="3">
+					<tr>
+						<th>项</th>
+						<th>条件模式基</th>
+						<th>条件FP数</th>
+						<th>产生频繁模式</th>
+					</tr>
+					<tr>
+						<th>I5</th>
+						<th>{{I2 I1:1},{I2 I1 I3:1}}</th>
+						<th>{I2:2,I1:2}</th>
+						<th>{I2 I5:2},{I1 I5:2},{I2 I1 I5:2}</th>
+					</tr>
+					<tr>
+						<th>I4</th>
+						<th>{{I2 I1:1},{I2:1}}</th>
+						<th>{I2:2}</th>
+						<th>{I2 I4:2}</th>
+					</tr>
+					<tr>
+						<th>I3</th>
+						<th>{{I2 I1:2},{I2:2},{I1:2}}</th>
+						<th>{I2:4,I1:2,I1:2}</th>
+						<th>{I2 I3:4},{I1 I3:4},{I2 I1 I3:2}</th>
+					</tr>
+					<tr>
+						<th>I1</th>
+						<th>{{I1:4}}</th>
+						<th>{I2:4}</th>
+						<th>{I2 I1:4}</th>
+					</tr>
+				</table>	
+
+            </div>
+
+            <div id="footer">
+                <p>Copyright 2011-2012 All Right Reserved ICP 备 10011234 号</p>
+                <p>注：88888888888888888888888888888888888888888888888888888888888888888888888888</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
