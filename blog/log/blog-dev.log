@@ -1,0 +1,149 @@
+2019-11-15 15:42:44.953  INFO 14124 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 14124 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 15:42:44.963  INFO 14124 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 15:42:45.133  INFO 14124 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\uni\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-15 15:42:45.133  INFO 14124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 15:42:45.133  INFO 14124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 15:42:47.435  INFO 14124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 15:42:47.445  INFO 14124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 15:42:47.455  INFO 14124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 15:42:47.684  INFO 14124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 15:42:47.684  INFO 14124 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2551 ms
+2019-11-15 15:42:48.114  INFO 14124 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 15:42:48.235  INFO 14124 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 15:42:49.195  INFO 14124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 15:42:49.245  INFO 14124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 15:42:49.255  INFO 14124 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 5.361 seconds (JVM running for 8.276)
+2019-11-15 15:44:07.683  INFO 14124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-15 15:44:07.685  INFO 14124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-15 15:44:07.706  INFO 14124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2019-11-15 15:44:07.745  INFO 14124 --- [http-nio-8080-exec-1] com.tidestorm.blog.aspect.LogAspect      : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.tidestorm.blog.web.IndexController.index', args=[]}
+2019-11-15 15:44:07.753  INFO 14124 --- [http-nio-8080-exec-1] com.tidestorm.blog.aspect.LogAspect      : Result : index
+2019-11-15 15:44:11.769  INFO 14124 --- [http-nio-8080-exec-2] com.tidestorm.blog.aspect.LogAspect      : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.tidestorm.blog.web.IndexController.index', args=[]}
+2019-11-15 15:44:11.789  INFO 14124 --- [http-nio-8080-exec-2] com.tidestorm.blog.aspect.LogAspect      : Result : index
+2019-11-15 15:45:54.507  INFO 16980 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 16980 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 15:45:54.507  INFO 16980 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 15:45:54.577  INFO 16980 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\uni\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-15 15:45:54.587  INFO 16980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 15:45:54.587  INFO 16980 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 15:45:56.649  INFO 16980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 15:45:56.659  INFO 16980 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 15:45:56.659  INFO 16980 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 15:45:56.889  INFO 16980 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 15:45:56.889  INFO 16980 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2302 ms
+2019-11-15 15:45:57.339  INFO 16980 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 15:45:57.489  INFO 16980 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 15:45:58.511  INFO 16980 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 15:45:58.561  INFO 16980 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 15:45:58.571  INFO 16980 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 4.973 seconds (JVM running for 7.523)
+2019-11-15 15:46:24.354  INFO 16980 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-11-15 15:46:24.361  INFO 16980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-11-15 15:46:24.393  INFO 16980 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 32 ms
+2019-11-15 15:46:24.473  INFO 16980 --- [http-nio-8080-exec-1] com.tidestorm.blog.aspect.LogAspect      : Request : {url='http://127.0.0.1:8080/', ip='127.0.0.1', classMethod='com.tidestorm.blog.web.IndexController.index', args=[]}
+2019-11-15 15:46:24.488  INFO 16980 --- [http-nio-8080-exec-1] com.tidestorm.blog.aspect.LogAspect      : Result : index
+2019-11-15 15:46:37.243  INFO 16980 --- [http-nio-8080-exec-1] com.tidestorm.blog.aspect.LogAspect      : Request : {url='http://127.0.0.1:8080/blog', ip='127.0.0.1', classMethod='com.tidestorm.blog.web.IndexController.blog', args=[]}
+2019-11-15 15:46:37.244  INFO 16980 --- [http-nio-8080-exec-1] com.tidestorm.blog.aspect.LogAspect      : Result : blog
+2019-11-15 15:54:25.749  INFO 11528 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 11528 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 15:54:25.759  INFO 11528 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 15:54:25.829  INFO 11528 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\uni\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-15 15:54:25.829  INFO 11528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 15:54:25.829  INFO 11528 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 15:54:27.770  INFO 11528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 15:54:27.780  INFO 11528 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 15:54:27.780  INFO 11528 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 15:54:28.150  INFO 11528 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 15:54:28.170  INFO 11528 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2321 ms
+2019-11-15 15:54:28.750  INFO 11528 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 15:54:28.880  INFO 11528 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 15:54:29.770  INFO 11528 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 15:54:29.810  INFO 11528 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 15:54:29.820  INFO 11528 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 5.117 seconds (JVM running for 7.816)
+2019-11-15 16:05:38.991  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 17196 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 16:05:39.001  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 16:05:39.071  INFO 17196 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\uni\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-15 16:05:39.071  INFO 17196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 16:05:39.071  INFO 17196 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 16:05:41.178  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 16:05:41.198  INFO 17196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:05:41.198  INFO 17196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 16:05:41.408  INFO 17196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:05:41.408  INFO 17196 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2337 ms
+2019-11-15 16:05:41.910  INFO 17196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:05:42.070  INFO 17196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 16:05:43.360  INFO 17196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:05:43.430  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 16:05:43.430  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 5.39 seconds (JVM running for 8.115)
+2019-11-15 16:07:27.940  INFO 17196 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:07:28.704  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 17196 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 16:07:28.704  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 16:07:29.144  WARN 17196 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-11-15 16:07:29.174  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 16:07:29.174  INFO 17196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:07:29.174  INFO 17196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 16:07:29.264  INFO 17196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:07:29.274  INFO 17196 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 570 ms
+2019-11-15 16:07:29.554  INFO 17196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:07:29.614  INFO 17196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 16:07:30.884  INFO 17196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:07:30.904  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 16:07:30.904  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 2.288 seconds (JVM running for 115.588)
+2019-11-15 16:07:30.904  INFO 17196 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-15 16:07:43.072  INFO 17196 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:07:51.180  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 17196 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 16:07:51.180  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 16:07:51.909  WARN 17196 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-11-15 16:07:51.949  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 16:07:51.949  INFO 17196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:07:51.949  INFO 17196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 16:07:52.059  INFO 17196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:07:52.069  INFO 17196 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 889 ms
+2019-11-15 16:07:52.419  INFO 17196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:07:52.519  INFO 17196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 16:07:53.759  INFO 17196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:07:53.779  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 16:07:53.788  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 2.733 seconds (JVM running for 138.468)
+2019-11-15 16:07:53.788  INFO 17196 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-15 16:09:01.681  INFO 17196 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:09:09.836  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 17196 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 16:09:09.836  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 16:09:10.605  WARN 17196 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-11-15 16:09:10.645  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 16:09:10.645  INFO 17196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:09:10.645  INFO 17196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 16:09:10.745  INFO 17196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:09:10.755  INFO 17196 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 909 ms
+2019-11-15 16:09:11.145  INFO 17196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:09:11.305  INFO 17196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 16:09:12.458  INFO 17196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:09:12.478  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 16:09:12.478  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 2.711 seconds (JVM running for 217.162)
+2019-11-15 16:09:12.478  INFO 17196 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-15 16:09:45.098  INFO 17196 --- [Thread-28] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:09:53.719  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 17196 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 16:09:53.729  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 16:09:54.449  WARN 17196 --- [restartedMain] org.apache.tomcat.util.modeler.Registry  : The MBean registry cannot be disabled because it has already been initialised
+2019-11-15 16:09:54.479  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 16:09:54.489  INFO 17196 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:09:54.489  INFO 17196 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 16:09:54.649  INFO 17196 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:09:54.649  INFO 17196 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 920 ms
+2019-11-15 16:09:55.080  INFO 17196 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:09:55.160  INFO 17196 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 16:09:56.456  INFO 17196 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:09:56.476  INFO 17196 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 16:09:56.476  INFO 17196 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 2.881 seconds (JVM running for 261.16)
+2019-11-15 16:09:56.476  INFO 17196 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2019-11-15 16:10:20.963  INFO 17808 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Starting BlogApplication on DESKTOP-HCBUD30 with PID 17808 (C:\Users\uni\IdeaProjects\blog\target\classes started by uni in C:\Users\uni\IdeaProjects\blog)
+2019-11-15 16:10:20.963  INFO 17808 --- [restartedMain] com.tidestorm.blog.BlogApplication       : The following profiles are active: dev
+2019-11-15 16:10:21.023  INFO 17808 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\uni\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/uni/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+2019-11-15 16:10:21.023  INFO 17808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-11-15 16:10:21.023  INFO 17808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-11-15 16:10:22.605  INFO 17808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-11-15 16:10:22.625  INFO 17808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-11-15 16:10:22.625  INFO 17808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.27]
+2019-11-15 16:10:22.875  INFO 17808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-11-15 16:10:22.875  INFO 17808 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1852 ms
+2019-11-15 16:10:23.304  INFO 17808 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-11-15 16:10:23.404  INFO 17808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-11-15 16:10:24.854  INFO 17808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-11-15 16:10:24.903  INFO 17808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-11-15 16:10:24.913  INFO 17808 --- [restartedMain] com.tidestorm.blog.BlogApplication       : Started BlogApplication in 4.784 seconds (JVM running for 9.213)
